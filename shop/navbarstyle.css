@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+    background-color: black;
+    color : white;
+    margin : 0;
+    padding : 0;
+}
+
+.navbar_menu {
+    font-family: 'Comfortaa', cursive;
+    margin : 10px 15px;
+    padding : 10px 12px;
+    justify-content: space-between;
+    display: flex; /*한 줄 나열*/
+    align-items: center;
+    color : white;
+    overflow : hidden;
+}
+
+a {
+    text-decoration: none;
+    color : white;
+    padding : 4px 6px;
+}
+
+.navbar_home {
+    font-weight: 800;
+    font-size : 28px;
+}
+
+.navbar_li {
+    display: flex;
+    list-style-type: none;
+    margin:0;
+    padding : 0;
+}
+
+.navbar_li a {
+    padding : 10px 8px;
+}
+
+.navbar_li a:hover {
+    border-bottom: 2px solid #88ff00;
+}
+
+
+
+i {
+    color : white;
+}
+
+.navbar_search input {
+    border : none;
+    border-radius : 15px;
+    padding : 4px 10px;
+    margin : 10px;
+    float :left;
+}
+
+.navbar_search button {
+    background-color : rgba(0,0,0,0);
+    cursor:pointer;
+}
+
+.navbar_search {
+    display:flex;
+}
+
+@media screen and (max-width:673px){
+    .navbar_menu {
+        flex-direction: column; /*flex direction은 기본 축과 방향을 정의하는 플렉스 컨테이너에 플렉스 항목을 배치하는 방법읋 설정*/
+        align-items: flex-start;
+    }
+
+    .navbar_li {
+        flex-direction: column;
+        margin : 10px 0;
+        align-items: center;
+        width : 100%;
+    }
+
+    .navbar_li a {
+        padding : 4px 0px;
+    }
+
+    .navbar_li li {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .navbar_search {
+        justify-content: center;
+        width : 100%;
+    }
+}
