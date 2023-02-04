@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./navbarstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ccb2e64d6a.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
     <title>나의 감성 온라인 편집 샵 | 피키스 샵</title>
 </head>
 <body>
-    <nav class="navbar_menu">
-        <div class="navbar_home"><a href="">P</a></div>
-            <ul class="navbar_li">
-                <li><a href="#">BEST</a></li>
-                <li><a href="#">NEW</a></li>
-                <li><a href="#">Clothes</a></li>
-                <li><a href="#">Accessory</a></li>
-                <li><a href="#">Interior</a></li>
-            </ul>
-            <div class="navbar_search">
-                <input type="text" placeholder="search items" name=="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
+    <nav class="navbar">
+        <div class="navbar_logo"><a href="">P</a></div>
+        <ul class="navbar_menu">
+            <li><a href="#">BEST</a></li>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">Clothes</a></li>
+            <li><a href="#">Accessory</a></li>
+            <li><a href="#">Interior</a></li>
+        </ul>
+        <div class="navbar_search">
+            <span class="icon"></span>
+            <i id="searchBtn" class="fa fa-search"></i>
+            <i id="closeBtn" class="fa-solid fa-xmark"></i>
+        </span>
+        </div>
+        <a href="" class="menuToogle"><i class="fa-solid fa-bars"></i></a>
+        <div class="navbar_searchBox">
+            <input type="text" placeholder="search items" name=="search">
+        </div>
     </nav>
 </body>
 </html>
